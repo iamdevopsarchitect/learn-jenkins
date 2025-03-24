@@ -26,7 +26,7 @@ pipeline {
         post {
         always { 
             echo 'This section runs always'
-            
+            deleteDir() // delete build when jenkins pipeline is completed
         }
         success { 
             echo 'This section runs when pipeline success!'
