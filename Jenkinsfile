@@ -23,13 +23,14 @@ pipeline {
             steps {
                 
                 sh 'echo this is test'
-                sh 'sleep 10'
+                //sh 'sleep 10'
             }
         }
         stage('Test') {
             steps {
                 
                 sh 'echo this is test'
+                sh 'env'
             }
         }
         stage('Deploy') {
